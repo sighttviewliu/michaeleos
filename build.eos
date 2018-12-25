@@ -1,4 +1,34 @@
+构建注意：
+选择稳定的分支
+注意记录构建的问题
 
+
+
+1]在eos的20181225版本，master分支
+包含eosio_build.sh  eosio_install.sh  eosio_uninstall.sh
+三个脚本文件，含义明显
+2]在./scripts目录包含系列构建脚本，都是上述脚本的依赖
+abi_is_json.py         eosio_build_darwin.sh  eosio-tn_down.sh    generate_package.sh.in
+clean_old_install.sh   eosio_build_dep        eosio-tn_roll.sh    generate_rpm.sh
+CMakeLists.txt         eosio_build_fedora.sh  eosio-tn_up.sh      generate_tarball.sh
+eosio_build_amazon.sh  eosio_build_ubuntu.sh  generate_bottle.sh
+eosio_build_centos.sh  eosio-tn_bounce.sh     generate_deb.sh
+3]因为我是Ubuntu Kylin操作系统，脚本并不识别，所以需要手动修改为如下情况
+         "Ubuntu"|"Ubuntu Kylin")
+            FILE="${SOURCE_DIR}/scripts/eosio_build_ubuntu.sh"
+            CXX_COMPILER=clang++-4.0
+            C_COMPILER=clang-4.0
+            MONGOD_CONF=${HOME}/opt/mongodb/mongod.conf
+            export PATH=${HOME}/opt/mongodb/bin:$PATH
+         ;;
+4]执行构建$ ./eosio_build.sh时，需要添加https_proxy=socks5://127.0.0.1:10888
+需要搭梯子，否则有些依赖无法下载
+5]内存要求限制修改，原本时7000，现在是3000，我机器内存有限
+	if [ "${MEM_MEG}" -lt 3000 ]; then
+		printf "\\tYour system must have 7 or more Gigabytes of physical memory installed.\\n"
+		printf "\\tExiting now.\\n"
+		exit 1
+	fi
 
 
 

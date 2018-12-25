@@ -1,0 +1,16 @@
+折腾输入法
+
+1我从ubuntu1604升级到1804，是麒麟特别版
+2检查输入法的输入源只有汉语，没有拼音
+3在设置中找到区域，修改依赖fcitx为ibus
+4由于我们依赖的是ibus原生，如果安装搜狗需要以来fcitx
+5需要补充安装
+$sudo apt install ibus-pinyin libibus-pinyin pinyin-database -y
+6重启机器
+7添加输入源出现了拼音
+8添加完重启
+9可以使用了
+
+
+
+

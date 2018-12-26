@@ -29,6 +29,8 @@ eosio_build_centos.sh  eosio-tn_bounce.sh     generate_deb.sh
 		printf "\\tExiting now.\\n"
 		exit 1
 	fi
+6]整个构建时间
+基于上述配置，下午2:00编译，到次日凌晨3:40结束
 
 
 

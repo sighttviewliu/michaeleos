@@ -1,0 +1,9 @@
+nodeos -e -p eosio --plugin eosio::chain_api_plugin --plugin eosio::history_api_plugin --genesis-json genesis.json
+
+#nodeos -e -p eosio --plugin eosio::wallet_api_plugin --plugin eosio::chain_api_plugin --plugin eosio::history_api_plugin --genesis-json genesis.json
+#不存在wallet_api_plugin，问题正在分析
+
+后续启动不需要--gennesis-json genesis.json
+第2次正常启动的命令
+nodeos -e -p eosio --plugin eosio::chain_api_plugin --plugin eosio::history_api_plugin 
+

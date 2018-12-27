@@ -1,0 +1,1 @@
+nodeos --data-dir ./ --config-dir ./ --genesis-json genesis.json

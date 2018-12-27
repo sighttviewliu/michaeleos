@@ -1,0 +1,20 @@
+nodeos -e
+       对应config.ini文件enable-stale-production = true 
+       -p eosio
+       对应config.ini文件producer-name = eosio
+       --plugin eosio::wallet_api_plugin 
+       --plugin eosio::chain_api_plugin 
+       --plugin eosio::history_api_plugin 
+       对应config.ini文件plugin = eosio::producer_plugin
+                         plugin = eosio::producer_plugin
+                         plugin = eosio::wallet_api_plugin
+                         ...诸如此类
+       --genesis-json genesis.json
+       获取genesis.json 含路径
+
+#启动的时候wallet_api_plugin没有找到，导致程序异常终止
+问题正在分析，或是keosd没有启动的原因
+
+注意：
+后续启动的时候不需要加入--genesis-json入参/选项
+这个参数只用于首次启动

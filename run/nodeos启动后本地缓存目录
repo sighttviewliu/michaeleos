@@ -1,0 +1,19 @@
+$ tree ./.local/share/eosio/
+./.local/share/eosio/
+└── nodeos
+    ├── config
+    │   └── config.ini
+    └── data
+        ├── blocks
+        │   ├── blocks.index
+        │   ├── blocks.log
+        │   └── reversible
+        │       ├── shared_memory.bin
+        │       └── shared_memory.meta
+        ├── snapshots
+        └── state
+            ├── forkdb.dat
+            ├── shared_memory.bin
+            └── shared_memory.meta
+
+7 directories, 8 files

@@ -1,0 +1,76 @@
+michaellaoliu@michaellaoliu-VirtualBox:~/data/eos$ tree -L 1
+.
+├── build
+├── CMakeLists.txt
+├── CMakeModules
+├── contracts
+├── debian
+├── Docker
+├── docs
+├── eos.doxygen.in
+├── eosio_build.sh
+├── eosio_install.sh
+├── eosio_uninstall.sh
+├── eosio.version.in
+├── externals
+├── HEADER
+├── images
+├── libraries
+├── LICENSE
+├── plugins
+├── programs
+├── README.md
+├── scripts
+├── testnet.md
+├── testnet.template
+├── tests
+├── tools
+├── tutorials
+└── unittests
+
+16 directories, 11 files
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+michaellaoliu@michaellaoliu-VirtualBox:~/data/eos$ tree -L 1 -d
+.
+├── build                   CMake交叉编译要求
+├── CMakeModules            CMake构建管理依赖模块
+├── contracts               合约包/组件              
+├── debian                  ...
+├── Docker                  镜像编排与容器编排
+├── docs                    ...
+├── externals               3方依赖
+├── images                  ...图片
+├── libraries               库模块
+├── plugins                 插件模块
+├── programs                子程序模块
+├── scripts                 源码工具脚本含构建打包
+├── tests                   随源码的测试/集成层面
+├── tools                   源码工具
+├── tutorials               入门依赖
+└── unittests               随源码的单元测试
+
+16 directories
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++
+michaellaoliu@michaellaoliu-VirtualBox:~/data/eos/CMakeModules$ tree .
+.
+├── additionalPlugins.cmake
+├── cotire.cmake
+├── doxygen.cmake
+├── eosio-config.cmake.in
+├── EosioTesterBuild.cmake.in
+├── EosioTester.cmake.in
+├── FindGperftools.cmake
+├── FindWasm.cmake
+├── InstallDirectoryPermissions.cmake
+├── installer.cmake
+├── MASSigning.cmake
+├── package.cmake
+├── utils.cmake
+└── wasm.cmake
+
+0 directories, 14 files
+
+注：make ant mvn gradle composer npm 
+包管理与构建集成工具

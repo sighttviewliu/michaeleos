@@ -1,0 +1,310 @@
+概览
+michaellaoliu@michaellaoliu-VirtualBox:~/data/eos/tests$ tree -L 1 -d /usr/local/eosio/
+/usr/local/eosio/
+├── bin                    可执行文件
+├── etc                    系统级'配置文件'      
+├── include                头文件
+├── lib                    静态库
+├── share                  分享/许可证
+└── var                    系统级'变量文件'
+
+注：dev保存了驱动文件      系统级别
+    opt和usr一样放部署软件 系统级别
+
+6 directories
+
+展开
+michaellaoliu@michaellaoliu-VirtualBox:~/data/eos/tests$ tree /usr/local/eosio/
+/usr/local/eosio/
+├── bin
+│   ├── cleos
+│   ├── eosio-blocklog
+│   ├── eosio-launcher
+│   ├── eosio-s2wasm
+│   ├── eosio-wast2wasm
+│   ├── keosd
+│   └── nodeos
+├── etc
+│   └── eosio
+│       └── launcher
+│           └── testnet.template
+├── include
+│   ├── appbase
+│   │   ├── application.hpp
+│   │   ├── channel.hpp
+│   │   ├── method.hpp
+│   │   ├── plugin.hpp
+│   │   └── version.hpp
+│   ├── chainbase
+│   │   └── chainbase.hpp
+│   ├── eosio
+│   │   ├── chain
+│   │   │   ├── abi_def.hpp
+│   │   │   ├── abi_serializer.hpp
+│   │   │   ├── account_object.hpp
+│   │   │   ├── action.hpp
+│   │   │   ├── action_receipt.hpp
+│   │   │   ├── apply_context.hpp
+│   │   │   ├── asset.hpp
+│   │   │   ├── authority_checker.hpp
+│   │   │   ├── authority.hpp
+│   │   │   ├── authorization_manager.hpp
+│   │   │   ├── block_header.hpp
+│   │   │   ├── block_header_state.hpp
+│   │   │   ├── block.hpp
+│   │   │   ├── block_log.hpp
+│   │   │   ├── block_state.hpp
+│   │   │   ├── block_summary_object.hpp
+│   │   │   ├── block_timestamp.hpp
+│   │   │   ├── chain_config.hpp
+│   │   │   ├── chain_id_type.hpp
+│   │   │   ├── chain_snapshot.hpp
+│   │   │   ├── config.hpp
+│   │   │   ├── contract_table_objects.hpp
+│   │   │   ├── contract_types.hpp
+│   │   │   ├── controller.hpp
+│   │   │   ├── core_symbol.hpp
+│   │   │   ├── database_utils.hpp
+│   │   │   ├── eosio_contract.hpp
+│   │   │   ├── exceptions.hpp
+│   │   │   ├── fixed_key.hpp
+│   │   │   ├── fork_database.hpp
+│   │   │   ├── generated_transaction_object.hpp
+│   │   │   ├── genesis_state.hpp
+│   │   │   ├── global_property_object.hpp
+│   │   │   ├── incremental_merkle.hpp
+│   │   │   ├── merkle.hpp
+│   │   │   ├── multi_index_includes.hpp
+│   │   │   ├── name.hpp
+│   │   │   ├── parallel_markers.hpp
+│   │   │   ├── permission_link_object.hpp
+│   │   │   ├── permission_object.hpp
+│   │   │   ├── producer_object.hpp
+│   │   │   ├── producer_schedule.hpp
+│   │   │   ├── protocol.hpp
+│   │   │   ├── resource_limits.hpp
+│   │   │   ├── resource_limits_private.hpp
+│   │   │   ├── reversible_block_object.hpp
+│   │   │   ├── snapshot.hpp
+│   │   │   ├── symbol.hpp
+│   │   │   ├── trace.hpp
+│   │   │   ├── transaction_context.hpp
+│   │   │   ├── transaction.hpp
+│   │   │   ├── transaction_metadata.hpp
+│   │   │   ├── transaction_object.hpp
+│   │   │   ├── types.hpp
+│   │   │   ├── wasm_eosio_binary_ops.hpp
+│   │   │   ├── wasm_eosio_constraints.hpp
+│   │   │   ├── wasm_eosio_injection.hpp
+│   │   │   ├── wasm_eosio_validation.hpp
+│   │   │   ├── wasm_interface.hpp
+│   │   │   ├── wasm_interface_private.hpp
+│   │   │   └── wast_to_wasm.hpp
+│   │   └── testing
+│   │       ├── chainbase_fixture.hpp
+│   │       ├── tester.hpp
+│   │       └── tester_network.hpp
+│   ├── eosio.version.hpp
+│   ├── fc
+│   │   ├── actor.hpp
+│   │   ├── aligned.hpp
+│   │   ├── any.hpp
+│   │   ├── api.hpp
+│   │   ├── array.hpp
+│   │   ├── bitutil.hpp
+│   │   ├── bloom_filter.hpp
+│   │   ├── compress
+│   │   │   ├── smaz.hpp
+│   │   │   └── zlib.hpp
+│   │   ├── container
+│   │   │   ├── deque_fwd.hpp
+│   │   │   ├── deque.hpp
+│   │   │   ├── flat_fwd.hpp
+│   │   │   └── flat.hpp
+│   │   ├── crypto
+│   │   │   ├── aes.hpp
+│   │   │   ├── base32.hpp
+│   │   │   ├── base36.hpp
+│   │   │   ├── base58.hpp
+│   │   │   ├── base64.hpp
+│   │   │   ├── bigint.hpp
+│   │   │   ├── blowfish.hpp
+│   │   │   ├── city.hpp
+│   │   │   ├── common.hpp
+│   │   │   ├── dh.hpp
+│   │   │   ├── digest.hpp
+│   │   │   ├── elliptic.hpp
+│   │   │   ├── elliptic_r1.hpp
+│   │   │   ├── equihash.hpp
+│   │   │   ├── hex.hpp
+│   │   │   ├── hmac.hpp
+│   │   │   ├── openssl.hpp
+│   │   │   ├── pke.hpp
+│   │   │   ├── private_key.hpp
+│   │   │   ├── public_key.hpp
+│   │   │   ├── rand.hpp
+│   │   │   ├── ripemd160.hpp
+│   │   │   ├── sha1.hpp
+│   │   │   ├── sha224.hpp
+│   │   │   ├── sha256.hpp
+│   │   │   ├── sha512.hpp
+│   │   │   └── signature.hpp
+│   │   ├── exception
+│   │   │   └── exception.hpp
+│   │   ├── filesystem.hpp
+│   │   ├── fixed_string.hpp
+│   │   ├── fwd.hpp
+│   │   ├── fwd_impl.hpp
+│   │   ├── git_revision.hpp
+│   │   ├── interprocess
+│   │   │   ├── container.hpp
+│   │   │   ├── file_mapping.hpp
+│   │   │   ├── iprocess.hpp
+│   │   │   ├── mmap_struct.hpp
+│   │   │   └── process.hpp
+│   │   ├── io
+│   │   │   ├── buffered_iostream.hpp
+│   │   │   ├── console.hpp
+│   │   │   ├── datastream.hpp
+│   │   │   ├── enum_type.hpp
+│   │   │   ├── fstream.hpp
+│   │   │   ├── iobuffer.hpp
+│   │   │   ├── json.hpp
+│   │   │   ├── json_relaxed.hpp
+│   │   │   ├── raw_fwd.hpp
+│   │   │   ├── raw.hpp
+│   │   │   ├── raw_unpack_file.hpp
+│   │   │   ├── raw_variant.hpp
+│   │   │   ├── sstream.hpp
+│   │   │   └── varint.hpp
+│   │   ├── log
+│   │   │   ├── appender.hpp
+│   │   │   ├── console_appender.hpp
+│   │   │   ├── file_appender.hpp
+│   │   │   ├── gelf_appender.hpp
+│   │   │   ├── logger_config.hpp
+│   │   │   ├── logger.hpp
+│   │   │   └── log_message.hpp
+│   │   ├── make_fused.hpp
+│   │   ├── network
+│   │   │   ├── http
+│   │   │   │   └── http_client.hpp
+│   │   │   ├── ip.hpp
+│   │   │   ├── message_buffer.hpp
+│   │   │   ├── platform_root_ca.hpp
+│   │   │   ├── resolve.hpp
+│   │   │   ├── udp_socket.hpp
+│   │   │   └── url.hpp
+│   │   ├── noncopyable.hpp
+│   │   ├── optional.hpp
+│   │   ├── platform_independence.hpp
+│   │   ├── real128.hpp
+│   │   ├── reflect
+│   │   │   ├── reflect.hpp
+│   │   │   ├── typename.hpp
+│   │   │   └── variant.hpp
+│   │   ├── rpc
+│   │   │   ├── api_connection.hpp
+│   │   │   ├── binary_api_connection.hpp
+│   │   │   ├── cli.hpp
+│   │   │   ├── http_api.hpp
+│   │   │   ├── json_connection.hpp
+│   │   │   ├── variant_connection.hpp
+│   │   │   ├── variant_stream.hpp
+│   │   │   └── websocket_api.hpp
+│   │   ├── safe.hpp
+│   │   ├── scoped_exit.hpp
+│   │   ├── shared_ptr.hpp
+│   │   ├── smart_ref_fwd.hpp
+│   │   ├── smart_ref_impl.hpp
+│   │   ├── static_variant.hpp
+│   │   ├── string.hpp
+│   │   ├── time.hpp
+│   │   ├── tuple.hpp
+│   │   ├── uint128.hpp
+│   │   ├── unique_ptr.hpp
+│   │   ├── utf8.hpp
+│   │   ├── utility.hpp
+│   │   ├── variant.hpp
+│   │   ├── variant_object.hpp
+│   │   ├── vector_fwd.hpp
+│   │   └── vector.hpp
+│   ├── softfloat
+│   │   ├── internals.h
+│   │   ├── opts-GCC.h
+│   │   ├── primitives.h
+│   │   ├── primitiveTypes.h
+│   │   ├── softfloat.h
+│   │   ├── softfloat.hpp
+│   │   └── softfloat_types.h
+│   └── wasm-jit
+│       ├── Emscripten
+│       │   └── Emscripten.h
+│       ├── Inline
+│       │   ├── BasicTypes.h
+│       │   ├── CMakeLists.txt
+│       │   ├── DenseStaticIntSet.h
+│       │   ├── Errors.h
+│       │   ├── Floats.h
+│       │   ├── Serialization.h
+│       │   ├── Timing.h
+│       │   └── UTF8.h
+│       ├── IR
+│       │   ├── IR.h
+│       │   ├── Module.h
+│       │   ├── OperatorPrinter.h
+│       │   ├── Operators.h
+│       │   ├── Types.h
+│       │   └── Validate.h
+│       ├── Logging
+│       │   └── Logging.h
+│       ├── Platform
+│       │   └── Platform.h
+│       ├── Runtime
+│       │   ├── Intrinsics.h
+│       │   ├── Linker.h
+│       │   ├── Runtime.h
+│       │   └── TaggedValue.h
+│       ├── WASM
+│       │   └── WASM.h
+│       └── WAST
+│           ├── TestScript.h
+│           └── WAST.h
+├── lib
+│   ├── cmake
+│   │   └── eosio
+│   │       ├── eosio-config.cmake
+│   │       └── EosioTester.cmake
+│   ├── libappbase.a
+│   ├── libbinaryen.a
+│   ├── libbuiltins.a
+│   ├── libchainbase.a
+│   ├── libeosio_chain.a
+│   ├── libeosio_testing.a
+│   ├── libfc.a
+│   ├── libIR.a
+│   ├── libLogging.a
+│   ├── libPlatform.a
+│   ├── libRuntime.a
+│   ├── libsecp256k1.a
+│   ├── libsoftfloat.a
+│   ├── libwabt.a
+│   ├── libWASM.a
+│   └── libWAST.a
+├── share
+│   └── licenses
+│       └── eosio
+│           ├── LICENSE
+│           ├── LICENSE.binaryen
+│           ├── LICENSE.go
+│           ├── LICENSE.secp256k1
+│           ├── LICENSE.softfloat
+│           ├── LICENSE.wabt
+│           └── LICENSE.wavm
+└── var
+    ├── lib
+    │   └── eosio
+    └── log
+        └── eosio
+
+43 directories, 247 files

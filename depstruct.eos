@@ -1,0 +1,8 @@
+michaellaoliu@michaellaoliu-VirtualBox:~/data/eos/tests$ tree -L 1 -d ~/opt/
+/home/michaellaoliu/opt/
+├── boost
+├── mongodb -> /home/michaellaoliu/opt/mongodb-linux-x86_64-3.6.3/
+├── mongodb-linux-x86_64-3.6.3
+└── wasm
+
+4 directories

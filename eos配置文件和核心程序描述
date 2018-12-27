@@ -1,0 +1,93 @@
+nodeos是节点客户端
+keosd是钱包客户端
+cleos是命令行工具，与nodeos和keosd交互
+
+
+
+
+---------------------------------
+genesis.json配置文件解释
+$ cat ./tutorials/bios-boot-tutorial/genesis.json
+{
+  "initial_timestamp": "2018-03-02T12:00:00.000",
+  初始时间戳 
+  "initial_key": "EOS8Znrtgwt8TfpmbVpTKvA2oB8Nqey625CLN8bCN3TEbgx86Dsvr",
+  初始密钥
+  "initial_configuration": {
+  初始配置
+    "max_block_net_usage": 1048576,
+    net 区块大小1MB峰值
+    "target_block_net_usage_pct": 1000,
+    net ... 
+    "max_transaction_net_usage": 524288,
+    net 交易大小512KB峰值
+    "base_per_transaction_net_usage": 12,
+    net ...
+    "net_usage_leeway": 500,
+    net ...    
+    "context_free_discount_net_usage_num": 20,
+    net ...
+    "context_free_discount_net_usage_den": 100,
+    net ...
+
+
+    
+    "max_block_cpu_usage": 100000,
+    cpu ...
+    "target_block_cpu_usage_pct": 500,
+    cpu ...
+    "max_transaction_cpu_usage": 50000,
+    cpu ...
+    "min_transaction_cpu_usage": 100,
+    cpu ...
+
+
+
+    "max_transaction_lifetime": 3600,
+    ...
+    "deferred_trx_expiration_window": 600,
+    ...
+    "max_transaction_delay": 3888000,
+    ...
+    "max_inline_action_size": 4096,
+    ...
+    "max_inline_action_depth": 4,
+    ...
+    "max_authority_depth": 6
+    ...
+  },
+  "initial_chain_id": "0000000000000000000000000000000000000000000000000000000000000000"
+  ...
+}
+
+
+
+
+
+
+
+
+
+
+--------------------------------------------------------
+$ find . -name "*.ini"
+./Docker/config.ini
+./build/config.ini
+./build/staging/etc/eosio/node_05/config.ini
+./build/staging/etc/eosio/node_03/config.ini
+./build/staging/etc/eosio/node_bios/config.ini
+./build/staging/etc/eosio/node_02/config.ini
+./build/staging/etc/eosio/node_04/config.ini
+./build/staging/etc/eosio/node_00/config.ini
+./build/staging/etc/eosio/node_01/config.ini
+./build/etc/eosio/node_03/config.ini
+./build/etc/eosio/node_bios/config.ini
+./build/etc/eosio/node_02/config.ini
+./build/etc/eosio/node_00/config.ini
+./build/etc/eosio/node_01/config.ini
+
+
+
+
+
+

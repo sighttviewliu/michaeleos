@@ -1,0 +1,24 @@
+michaellaoliu@michaellaoliu-VirtualBox:~/data/eos$ find . -name "genesis.json"
+./tutorials/bios-boot-tutorial/genesis.json
+./build/genesis.json
+./build/staging/etc/eosio/node_05/genesis.json
+./build/staging/etc/eosio/node_03/genesis.json
+./build/staging/etc/eosio/node_bios/genesis.json
+./build/staging/etc/eosio/node_02/genesis.json
+./build/staging/etc/eosio/node_04/genesis.json
+./build/staging/etc/eosio/node_00/genesis.json
+./build/staging/etc/eosio/node_01/genesis.json
+./build/etc/eosio/node_03/genesis.json
+./build/etc/eosio/node_bios/genesis.json
+./build/etc/eosio/node_02/genesis.json
+./build/etc/eosio/node_00/genesis.json
+./build/etc/eosio/node_01/genesis.json
+
+注意：bios的含义
+基本io系统
+在EOSIO系统中解释为最基本的内容，都需要依赖他
+
+脚本拷贝源码目录下面的genensis.json和config.ini
+到我的当前目录保存
+
+$ for dir in $(find . -name "genesis.json"); do echo ${dir%/*}; mkdir -p /home/michaellaoliu/data/michaeleos/genesis.dir/${dir%/*}; cp $dir /home/michaellaoliu/data/michaeleos/genesis.dir/${dir%/*}; done

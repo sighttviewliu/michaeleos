@@ -1,0 +1,134 @@
+michaellaoliu@michaellaoliu-VirtualBox:~/data/michaeleos$ cd /home/michaellaoliu/data/eos/build; make test
+Running tests...
+Test project /home/michaellaoliu/data/eos/build
+      Start  1: test_cypher_suites
+ 1/49 Test  #1: test_cypher_suites ...................   Passed    0.08 sec
+      Start  2: validate_eosio.token_abi
+ 2/49 Test  #2: validate_eosio.token_abi .............   Passed    0.04 sec
+      Start  3: validate_eosio.msig_abi
+ 3/49 Test  #3: validate_eosio.msig_abi ..............   Passed    0.04 sec
+      Start  4: validate_eosio.sudo_abi
+ 4/49 Test  #4: validate_eosio.sudo_abi ..............   Passed    0.04 sec
+      Start  5: validate_multi_index_test_abi
+ 5/49 Test  #5: validate_multi_index_test_abi ........   Passed    0.04 sec
+      Start  6: validate_snapshot_test_abi
+ 6/49 Test  #6: validate_snapshot_test_abi ...........   Passed    0.04 sec
+      Start  7: validate_eosio.system_abi
+ 7/49 Test  #7: validate_eosio.system_abi ............   Passed    0.05 sec
+      Start  8: validate_identity_abi
+ 8/49 Test  #8: validate_identity_abi ................   Passed    0.05 sec
+      Start  9: validate_identity_test_abi
+ 9/49 Test  #9: validate_identity_test_abi ...........   Passed    0.05 sec
+      Start 10: validate_stltest_abi
+10/49 Test #10: validate_stltest_abi .................   Passed    0.03 sec
+      Start 11: validate_test.inline_abi
+11/49 Test #11: validate_test.inline_abi .............   Passed    0.05 sec
+      Start 12: validate_hello_abi
+12/49 Test #12: validate_hello_abi ...................   Passed    0.06 sec
+      Start 13: validate_asserter_abi
+13/49 Test #13: validate_asserter_abi ................   Passed    0.04 sec
+      Start 14: validate_proxy_abi
+14/49 Test #14: validate_proxy_abi ...................   Passed    0.05 sec
+      Start 15: validate_test_api_abi
+15/49 Test #15: validate_test_api_abi ................   Passed    0.06 sec
+      Start 16: validate_test_api_mem_abi
+16/49 Test #16: validate_test_api_mem_abi ............   Passed    0.03 sec
+      Start 17: validate_test_api_db_abi
+17/49 Test #17: validate_test_api_db_abi .............   Passed    0.02 sec
+      Start 18: validate_test_api_multi_index_abi
+18/49 Test #18: validate_test_api_multi_index_abi ....   Passed    0.04 sec
+      Start 19: validate_test_ram_limit_abi
+19/49 Test #19: validate_test_ram_limit_abi ..........   Passed    0.05 sec
+      Start 20: validate_eosio.bios_abi
+20/49 Test #20: validate_eosio.bios_abi ..............   Passed    0.05 sec
+      Start 21: validate_noop_abi
+21/49 Test #21: validate_noop_abi ....................   Passed    0.05 sec
+      Start 22: validate_tic_tac_toe_abi
+22/49 Test #22: validate_tic_tac_toe_abi .............   Passed    0.05 sec
+      Start 23: validate_payloadless_abi
+23/49 Test #23: validate_payloadless_abi .............   Passed    0.05 sec
+      Start 24: validate_integration_test_abi
+24/49 Test #24: validate_integration_test_abi ........   Passed    0.04 sec
+      Start 25: unit_test_wavm
+25/49 Test #25: unit_test_wavm .......................   Passed  328.11 sec
+      Start 26: unit_test_wabt
+26/49 Test #26: unit_test_wabt .......................   Passed  135.01 sec
+      Start 27: validate_deferred_test_abi
+27/49 Test #27: validate_deferred_test_abi ...........   Passed    1.01 sec
+      Start 28: plugin_test
+28/49 Test #28: plugin_test ..........................   Passed   43.68 sec
+      Start 29: nodeos_sanity_test
+29/49 Test #29: nodeos_sanity_test ...................***Failed   65.00 sec
+      Start 30: nodeos_sanity_bnet_test
+30/49 Test #30: nodeos_sanity_bnet_test ..............***Failed   62.96 sec
+      Start 31: nodeos_run_test
+31/49 Test #31: nodeos_run_test ......................***Failed   62.95 sec
+      Start 32: nodeos_run_bnet_test
+32/49 Test #32: nodeos_run_bnet_test .................***Failed   63.00 sec
+      Start 33: p2p_dawn515_test
+33/49 Test #33: p2p_dawn515_test .....................   Passed    8.39 sec
+      Start 34: nodeos_run_test-mongodb
+34/49 Test #34: nodeos_run_test-mongodb ..............***Failed   63.87 sec
+      Start 35: distributed-transactions-test
+35/49 Test #35: distributed-transactions-test ........***Failed   75.91 sec
+      Start 36: distributed-transactions-bnet-test
+36/49 Test #36: distributed-transactions-bnet-test ...***Failed   71.57 sec
+      Start 37: restart-scenarios-test-resync
+37/49 Test #37: restart-scenarios-test-resync ........***Failed   66.59 sec
+      Start 38: restart-scenarios-test-hard_replay
+38/49 Test #38: restart-scenarios-test-hard_replay ...***Failed   66.61 sec
+      Start 39: restart-scenarios-test-none
+39/49 Test #39: restart-scenarios-test-none ..........***Failed   66.57 sec
+      Start 40: validate_dirty_db_test
+40/49 Test #40: validate_dirty_db_test ...............***Failed   62.91 sec
+      Start 41: launcher_test
+41/49 Test #41: launcher_test ........................***Failed   66.79 sec
+      Start 42: nodeos_sanity_lr_test
+42/49 Test #42: nodeos_sanity_lr_test ................***Failed   62.87 sec
+      Start 43: nodeos_sanity_bnet_lr_test
+43/49 Test #43: nodeos_sanity_bnet_lr_test ...........***Failed   62.95 sec
+      Start 44: nodeos_run_check_lr_test
+44/49 Test #44: nodeos_run_check_lr_test .............***Failed   62.96 sec
+      Start 45: nodeos_remote_lr_test
+45/49 Test #45: nodeos_remote_lr_test ................***Failed   63.26 sec
+      Start 46: nodeos_forked_chain_lr_test
+46/49 Test #46: nodeos_forked_chain_lr_test ..........***Failed   65.35 sec
+      Start 47: nodeos_voting_lr_test
+47/49 Test #47: nodeos_voting_lr_test ................***Failed   66.54 sec
+      Start 48: nodeos_voting_bnet_lr_test
+48/49 Test #48: nodeos_voting_bnet_lr_test ...........***Failed   66.44 sec
+      Start 49: nodeos_under_min_avail_ram_lr_test
+49/49 Test #49: nodeos_under_min_avail_ram_lr_test ...***Failed   66.55 sec
+
+59% tests passed, 20 tests failed out of 49
+
+Label Time Summary:
+long_running_tests         = 516.92 sec (8 tests)
+nonparallelizable_tests    = 803.12 sec (13 tests)
+
+Total Test time (real) = 1830.00 sec
+
+The following tests FAILED:
+	 29 - nodeos_sanity_test (Failed)
+	 30 - nodeos_sanity_bnet_test (Failed)
+	 31 - nodeos_run_test (Failed)
+	 32 - nodeos_run_bnet_test (Failed)
+	 34 - nodeos_run_test-mongodb (Failed)
+	 35 - distributed-transactions-test (Failed)
+	 36 - distributed-transactions-bnet-test (Failed)
+	 37 - restart-scenarios-test-resync (Failed)
+	 38 - restart-scenarios-test-hard_replay (Failed)
+	 39 - restart-scenarios-test-none (Failed)
+	 40 - validate_dirty_db_test (Failed)
+	 41 - launcher_test (Failed)
+	 42 - nodeos_sanity_lr_test (Failed)
+	 43 - nodeos_sanity_bnet_lr_test (Failed)
+	 44 - nodeos_run_check_lr_test (Failed)
+	 45 - nodeos_remote_lr_test (Failed)
+	 46 - nodeos_forked_chain_lr_test (Failed)
+	 47 - nodeos_voting_lr_test (Failed)
+	 48 - nodeos_voting_bnet_lr_test (Failed)
+	 49 - nodeos_under_min_avail_ram_lr_test (Failed)
+Errors while running CTest
+Makefile:116: recipe for target 'test' failed
+make: *** [test] Error :8

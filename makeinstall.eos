@@ -1,0 +1,373 @@
+michaellaoliu@michaellaoliu-VirtualBox:~/data/eos/build$ sudo make install
+[sudo] michaellaoliu 的密码： 
+[  1%] Built target binaryen
+[  1%] Built target wasm
+[  2%] Built target ast
+[  2%] Built target asmjs
+[  2%] Built target cfg
+[  4%] Built target passes
+[  4%] Built target support
+[  4%] Built target eosio-s2wasm
+[  4%] Built target emscripten-optimizer
+[  4%] Built target secp256k1
+[  8%] Built target fc
+[  9%] Built target test_cypher_suites
+[  9%] Built target builtins
+[ 30%] Built target softfloat
+[ 30%] Built target chainbase
+[ 30%] Built target chainbase_test
+[ 30%] Built target Platform
+[ 30%] Built target Logging
+[ 30%] Built target IR
+[ 31%] Built target Runtime
+[ 31%] Built target Emscripten
+[ 32%] Built target WASM
+[ 32%] Built target WAST
+[ 34%] Built target wavm
+[ 34%] Built target Test
+[ 34%] Built target Disassemble
+[ 34%] Built target eosio-wast2wasm
+[ 34%] Built target appbase_version
+[ 34%] Built target appbase
+[ 35%] Built target appbase_example
+[ 37%] Built target wabt
+[ 39%] Built target eosio_chain
+[ 41%] Built target libc++
+[ 42%] Built target eosiolib
+[ 80%] Built target libc
+[ 81%] Built target eosio.bios
+[ 81%] Built target eosio_testing
+[ 81%] contract...
+[ 81%] Built target copy_skeleton_contract
+[ 81%] Built target eosio.token
+[ 81%] Built target eosio.msig
+[ 82%] Built target eosio.sudo
+[ 82%] Built target multi_index_test
+[ 83%] Built target snapshot_test
+[ 83%] Built target eosio.system
+[ 84%] Built target identity_common
+[ 84%] Built target identity
+[ 84%] Built target identity_interface
+[ 84%] Built target identity_test
+[ 85%] Built target stltest
+[ 86%] Built target test.inline
+[ 86%] Built target hello
+[ 86%] Built target asserter
+[ 86%] Built target proxy
+[ 86%] Built target test_api
+[ 86%] Built target test_api_mem
+[ 87%] Built target test_api_db
+[ 87%] Built target test_api_multi_index
+[ 87%] Built target test_ram_limit
+[ 88%] Built target noop
+[ 89%] Built target tic_tac_toe
+[ 90%] Built target payloadless
+[ 91%] Built target integration_test
+[ 91%] Built target chain_plugin
+[ 91%] Built target bnet_plugin
+[ 92%] Built target http_client_plugin
+[ 93%] Built target producer_plugin
+[ 93%] Built target net_plugin
+[ 93%] Built target http_plugin
+[ 93%] Built target net_api_plugin
+[ 94%] Built target chain_api_plugin
+[ 94%] Built target producer_api_plugin
+[ 94%] Built target history_plugin
+[ 94%] Built target history_api_plugin
+[ 94%] Built target state_history_plugin
+[ 94%] Built target wallet_plugin
+[ 95%] Built target wallet_api_plugin
+[ 95%] Built target txn_test_gen_plugin
+[ 95%] Built target db_size_api_plugin
+[ 95%] Built target mongo_db_plugin
+[ 95%] Built target login_plugin
+[ 95%] Built target test_control_plugin
+[ 95%] Built target test_control_api_plugin
+[ 95%] Built target nodeos
+[ 95%] Built target cleos
+[ 95%] Built target keosd
+[ 95%] Built target eosio-launcher
+[ 96%] Built target eosio-blocklog
+[ 97%] Built target deferred_test
+[100%] Built target unit_test
+[100%] Built target plugin_test
+Install the project...
+-- Install configuration: "Release"
+-- Installing: /usr/local/eosio/etc/eosio
+-- Installing: /usr/local/eosio/etc/eosio/launcher/testnet.template
+-- Up-to-date: /usr/local/eosio/etc/eosio
+-- Up-to-date: /usr/local/eosio/etc/eosio/launcher
+-- Installing: /usr/local/eosio/include/eosio.version.hpp
+-- Installing: /usr/local/eosio/lib/cmake/eosio/eosio-config.cmake
+-- Installing: /usr/local/eosio/lib/cmake/eosio/EosioTester.cmake
+-- Installing: /usr/local/eosio/share/licenses/eosio/LICENSE
+-- Installing: /usr/local/eosio/share/licenses/eosio/LICENSE.wabt
+-- Installing: /usr/local/eosio/share/licenses/eosio/LICENSE.softfloat
+-- Installing: /usr/local/eosio/share/licenses/eosio/LICENSE.wavm
+-- Installing: /usr/local/eosio/share/licenses/eosio/LICENSE.secp256k1
+-- Installing: /usr/local/eosio/share/licenses/eosio/LICENSE.binaryen
+-- Installing: /usr/local/eosio/share/licenses/eosio/LICENSE.go
+-- Installing: /usr/local/eosio/bin/eosio-s2wasm
+-- Installing: /usr/local/eosio/lib/libbinaryen.a
+-- Installing: /usr/local/eosio/lib/libfc.a
+-- Installing: /usr/local/eosio/include/fc
+-- Installing: /usr/local/eosio/include/fc/utf8.hpp
+-- Installing: /usr/local/eosio/include/fc/exception
+-- Installing: /usr/local/eosio/include/fc/exception/exception.hpp
+-- Installing: /usr/local/eosio/include/fc/rpc
+-- Installing: /usr/local/eosio/include/fc/rpc/variant_stream.hpp
+-- Installing: /usr/local/eosio/include/fc/rpc/api_connection.hpp
+-- Installing: /usr/local/eosio/include/fc/rpc/variant_connection.hpp
+-- Installing: /usr/local/eosio/include/fc/rpc/websocket_api.hpp
+-- Installing: /usr/local/eosio/include/fc/rpc/cli.hpp
+-- Installing: /usr/local/eosio/include/fc/rpc/http_api.hpp
+-- Installing: /usr/local/eosio/include/fc/rpc/json_connection.hpp
+-- Installing: /usr/local/eosio/include/fc/rpc/binary_api_connection.hpp
+-- Installing: /usr/local/eosio/include/fc/container
+-- Installing: /usr/local/eosio/include/fc/container/flat.hpp
+-- Installing: /usr/local/eosio/include/fc/container/deque.hpp
+-- Installing: /usr/local/eosio/include/fc/container/deque_fwd.hpp
+-- Installing: /usr/local/eosio/include/fc/container/flat_fwd.hpp
+-- Installing: /usr/local/eosio/include/fc/reflect
+-- Installing: /usr/local/eosio/include/fc/reflect/reflect.hpp
+-- Installing: /usr/local/eosio/include/fc/reflect/variant.hpp
+-- Installing: /usr/local/eosio/include/fc/reflect/typename.hpp
+-- Installing: /usr/local/eosio/include/fc/log
+-- Installing: /usr/local/eosio/include/fc/log/logger.hpp
+-- Installing: /usr/local/eosio/include/fc/log/log_message.hpp
+-- Installing: /usr/local/eosio/include/fc/log/appender.hpp
+-- Installing: /usr/local/eosio/include/fc/log/console_appender.hpp
+-- Installing: /usr/local/eosio/include/fc/log/logger_config.hpp
+-- Installing: /usr/local/eosio/include/fc/log/gelf_appender.hpp
+-- Installing: /usr/local/eosio/include/fc/log/file_appender.hpp
+-- Installing: /usr/local/eosio/include/fc/filesystem.hpp
+-- Installing: /usr/local/eosio/include/fc/actor.hpp
+-- Installing: /usr/local/eosio/include/fc/utility.hpp
+-- Installing: /usr/local/eosio/include/fc/make_fused.hpp
+-- Installing: /usr/local/eosio/include/fc/variant_object.hpp
+-- Installing: /usr/local/eosio/include/fc/fwd_impl.hpp
+-- Installing: /usr/local/eosio/include/fc/git_revision.hpp
+-- Installing: /usr/local/eosio/include/fc/compress
+-- Installing: /usr/local/eosio/include/fc/compress/smaz.hpp
+-- Installing: /usr/local/eosio/include/fc/compress/zlib.hpp
+-- Installing: /usr/local/eosio/include/fc/real128.hpp
+-- Installing: /usr/local/eosio/include/fc/smart_ref_fwd.hpp
+-- Installing: /usr/local/eosio/include/fc/smart_ref_impl.hpp
+-- Installing: /usr/local/eosio/include/fc/optional.hpp
+-- Installing: /usr/local/eosio/include/fc/interprocess
+-- Installing: /usr/local/eosio/include/fc/interprocess/process.hpp
+-- Installing: /usr/local/eosio/include/fc/interprocess/container.hpp
+-- Installing: /usr/local/eosio/include/fc/interprocess/mmap_struct.hpp
+-- Installing: /usr/local/eosio/include/fc/interprocess/file_mapping.hpp
+-- Installing: /usr/local/eosio/include/fc/interprocess/iprocess.hpp
+-- Installing: /usr/local/eosio/include/fc/vector.hpp
+-- Installing: /usr/local/eosio/include/fc/platform_independence.hpp
+-- Installing: /usr/local/eosio/include/fc/bloom_filter.hpp
+-- Installing: /usr/local/eosio/include/fc/unique_ptr.hpp
+-- Installing: /usr/local/eosio/include/fc/aligned.hpp
+-- Installing: /usr/local/eosio/include/fc/variant.hpp
+-- Installing: /usr/local/eosio/include/fc/time.hpp
+-- Installing: /usr/local/eosio/include/fc/shared_ptr.hpp
+-- Installing: /usr/local/eosio/include/fc/vector_fwd.hpp
+-- Installing: /usr/local/eosio/include/fc/bitutil.hpp
+-- Installing: /usr/local/eosio/include/fc/uint128.hpp
+-- Installing: /usr/local/eosio/include/fc/api.hpp
+-- Installing: /usr/local/eosio/include/fc/fwd.hpp
+-- Installing: /usr/local/eosio/include/fc/fixed_string.hpp
+-- Installing: /usr/local/eosio/include/fc/noncopyable.hpp
+-- Installing: /usr/local/eosio/include/fc/static_variant.hpp
+-- Installing: /usr/local/eosio/include/fc/safe.hpp
+-- Installing: /usr/local/eosio/include/fc/string.hpp
+-- Installing: /usr/local/eosio/include/fc/tuple.hpp
+-- Installing: /usr/local/eosio/include/fc/array.hpp
+-- Installing: /usr/local/eosio/include/fc/network
+-- Installing: /usr/local/eosio/include/fc/network/url.hpp
+-- Installing: /usr/local/eosio/include/fc/network/resolve.hpp
+-- Installing: /usr/local/eosio/include/fc/network/ip.hpp
+-- Installing: /usr/local/eosio/include/fc/network/platform_root_ca.hpp
+-- Installing: /usr/local/eosio/include/fc/network/udp_socket.hpp
+-- Installing: /usr/local/eosio/include/fc/network/http
+-- Installing: /usr/local/eosio/include/fc/network/http/http_client.hpp
+-- Installing: /usr/local/eosio/include/fc/network/message_buffer.hpp
+-- Installing: /usr/local/eosio/include/fc/scoped_exit.hpp
+-- Installing: /usr/local/eosio/include/fc/any.hpp
+-- Installing: /usr/local/eosio/include/fc/crypto
+-- Installing: /usr/local/eosio/include/fc/crypto/dh.hpp
+-- Installing: /usr/local/eosio/include/fc/crypto/elliptic.hpp
+-- Installing: /usr/local/eosio/include/fc/crypto/aes.hpp
+-- Installing: /usr/local/eosio/include/fc/crypto/common.hpp
+-- Installing: /usr/local/eosio/include/fc/crypto/base58.hpp
+-- Installing: /usr/local/eosio/include/fc/crypto/signature.hpp
+-- Installing: /usr/local/eosio/include/fc/crypto/elliptic_r1.hpp
+-- Installing: /usr/local/eosio/include/fc/crypto/ripemd160.hpp
+-- Installing: /usr/local/eosio/include/fc/crypto/base64.hpp
+-- Installing: /usr/local/eosio/include/fc/crypto/sha256.hpp
+-- Installing: /usr/local/eosio/include/fc/crypto/rand.hpp
+-- Installing: /usr/local/eosio/include/fc/crypto/base36.hpp
+-- Installing: /usr/local/eosio/include/fc/crypto/sha1.hpp
+-- Installing: /usr/local/eosio/include/fc/crypto/blowfish.hpp
+-- Installing: /usr/local/eosio/include/fc/crypto/pke.hpp
+-- Installing: /usr/local/eosio/include/fc/crypto/private_key.hpp
+-- Installing: /usr/local/eosio/include/fc/crypto/openssl.hpp
+-- Installing: /usr/local/eosio/include/fc/crypto/equihash.hpp
+-- Installing: /usr/local/eosio/include/fc/crypto/bigint.hpp
+-- Installing: /usr/local/eosio/include/fc/crypto/hmac.hpp
+-- Installing: /usr/local/eosio/include/fc/crypto/base32.hpp
+-- Installing: /usr/local/eosio/include/fc/crypto/sha224.hpp
+-- Installing: /usr/local/eosio/include/fc/crypto/hex.hpp
+-- Installing: /usr/local/eosio/include/fc/crypto/city.hpp
+-- Installing: /usr/local/eosio/include/fc/crypto/digest.hpp
+-- Installing: /usr/local/eosio/include/fc/crypto/sha512.hpp
+-- Installing: /usr/local/eosio/include/fc/crypto/public_key.hpp
+-- Installing: /usr/local/eosio/include/fc/io
+-- Installing: /usr/local/eosio/include/fc/io/raw.hpp
+-- Installing: /usr/local/eosio/include/fc/io/json_relaxed.hpp
+-- Installing: /usr/local/eosio/include/fc/io/buffered_iostream.hpp
+-- Installing: /usr/local/eosio/include/fc/io/varint.hpp
+-- Installing: /usr/local/eosio/include/fc/io/sstream.hpp
+-- Installing: /usr/local/eosio/include/fc/io/fstream.hpp
+-- Installing: /usr/local/eosio/include/fc/io/raw_fwd.hpp
+-- Installing: /usr/local/eosio/include/fc/io/raw_variant.hpp
+-- Installing: /usr/local/eosio/include/fc/io/console.hpp
+-- Installing: /usr/local/eosio/include/fc/io/iobuffer.hpp
+-- Installing: /usr/local/eosio/include/fc/io/enum_type.hpp
+-- Installing: /usr/local/eosio/include/fc/io/datastream.hpp
+-- Installing: /usr/local/eosio/include/fc/io/json.hpp
+-- Installing: /usr/local/eosio/include/fc/io/raw_unpack_file.hpp
+-- Installing: /usr/local/eosio/lib/libsecp256k1.a
+-- Installing: /usr/local/eosio/lib/libbuiltins.a
+-- Installing: /usr/local/eosio/include/softfloat
+-- Installing: /usr/local/eosio/include/softfloat/primitiveTypes.h
+-- Installing: /usr/local/eosio/include/softfloat/softfloat.hpp
+-- Installing: /usr/local/eosio/include/softfloat/softfloat.h
+-- Installing: /usr/local/eosio/include/softfloat/softfloat_types.h
+-- Installing: /usr/local/eosio/include/softfloat/opts-GCC.h
+-- Installing: /usr/local/eosio/include/softfloat/internals.h
+-- Installing: /usr/local/eosio/include/softfloat/primitives.h
+-- Installing: /usr/local/eosio/lib/libsoftfloat.a
+-- Installing: /usr/local/eosio/include/chainbase
+-- Installing: /usr/local/eosio/include/chainbase/chainbase.hpp
+-- Installing: /usr/local/eosio/lib/libchainbase.a
+-- Installing: /usr/local/eosio/include/wasm-jit
+-- Installing: /usr/local/eosio/include/wasm-jit/Platform
+-- Installing: /usr/local/eosio/include/wasm-jit/Platform/Platform.h
+-- Installing: /usr/local/eosio/include/wasm-jit/Runtime
+-- Installing: /usr/local/eosio/include/wasm-jit/Runtime/Runtime.h
+-- Installing: /usr/local/eosio/include/wasm-jit/Runtime/Intrinsics.h
+-- Installing: /usr/local/eosio/include/wasm-jit/Runtime/Linker.h
+-- Installing: /usr/local/eosio/include/wasm-jit/Runtime/TaggedValue.h
+-- Installing: /usr/local/eosio/include/wasm-jit/Inline
+-- Installing: /usr/local/eosio/include/wasm-jit/Inline/DenseStaticIntSet.h
+-- Installing: /usr/local/eosio/include/wasm-jit/Inline/UTF8.h
+-- Installing: /usr/local/eosio/include/wasm-jit/Inline/BasicTypes.h
+-- Installing: /usr/local/eosio/include/wasm-jit/Inline/Errors.h
+-- Installing: /usr/local/eosio/include/wasm-jit/Inline/Timing.h
+-- Installing: /usr/local/eosio/include/wasm-jit/Inline/Serialization.h
+-- Installing: /usr/local/eosio/include/wasm-jit/Inline/CMakeLists.txt
+-- Installing: /usr/local/eosio/include/wasm-jit/Inline/Floats.h
+-- Installing: /usr/local/eosio/include/wasm-jit/Logging
+-- Installing: /usr/local/eosio/include/wasm-jit/Logging/Logging.h
+-- Installing: /usr/local/eosio/include/wasm-jit/IR
+-- Installing: /usr/local/eosio/include/wasm-jit/IR/OperatorPrinter.h
+-- Installing: /usr/local/eosio/include/wasm-jit/IR/Module.h
+-- Installing: /usr/local/eosio/include/wasm-jit/IR/Types.h
+-- Installing: /usr/local/eosio/include/wasm-jit/IR/Operators.h
+-- Installing: /usr/local/eosio/include/wasm-jit/IR/Validate.h
+-- Installing: /usr/local/eosio/include/wasm-jit/IR/IR.h
+-- Installing: /usr/local/eosio/include/wasm-jit/Emscripten
+-- Installing: /usr/local/eosio/include/wasm-jit/Emscripten/Emscripten.h
+-- Installing: /usr/local/eosio/include/wasm-jit/WAST
+-- Installing: /usr/local/eosio/include/wasm-jit/WAST/TestScript.h
+-- Installing: /usr/local/eosio/include/wasm-jit/WAST/WAST.h
+-- Installing: /usr/local/eosio/include/wasm-jit/WASM
+-- Installing: /usr/local/eosio/include/wasm-jit/WASM/WASM.h
+-- Installing: /usr/local/eosio/lib/libIR.a
+-- Installing: /usr/local/eosio/lib/libLogging.a
+-- Installing: /usr/local/eosio/lib/libPlatform.a
+-- Installing: /usr/local/eosio/bin/eosio-wast2wasm
+-- Installing: /usr/local/eosio/lib/libRuntime.a
+-- Installing: /usr/local/eosio/lib/libWASM.a
+-- Installing: /usr/local/eosio/lib/libWAST.a
+-- Installing: /usr/local/eosio/lib/libappbase.a
+-- Installing: /usr/local/eosio/include/appbase/version.hpp
+-- Installing: /usr/local/eosio/include/appbase/method.hpp
+-- Installing: /usr/local/eosio/include/appbase/plugin.hpp
+-- Installing: /usr/local/eosio/include/appbase/channel.hpp
+-- Installing: /usr/local/eosio/include/appbase/application.hpp
+-- Up-to-date: /usr/local/eosio/include/appbase
+-- Installing: /usr/local/eosio/lib/libeosio_chain.a
+-- Installing: /usr/local/eosio/include/eosio/chain
+-- Installing: /usr/local/eosio/include/eosio/chain/contract_table_objects.hpp
+-- Installing: /usr/local/eosio/include/eosio/chain/fixed_key.hpp
+-- Installing: /usr/local/eosio/include/eosio/chain/database_utils.hpp
+-- Installing: /usr/local/eosio/include/eosio/chain/fork_database.hpp
+-- Installing: /usr/local/eosio/include/eosio/chain/block_summary_object.hpp
+-- Installing: /usr/local/eosio/include/eosio/chain/wasm_eosio_constraints.hpp
+-- Installing: /usr/local/eosio/include/eosio/chain/resource_limits_private.hpp
+-- Installing: /usr/local/eosio/include/eosio/chain/exceptions.hpp
+-- Installing: /usr/local/eosio/include/eosio/chain/multi_index_includes.hpp
+-- Installing: /usr/local/eosio/include/eosio/chain/config.hpp
+-- Installing: /usr/local/eosio/include/eosio/chain/producer_object.hpp
+-- Installing: /usr/local/eosio/include/eosio/chain/abi_def.hpp
+-- Installing: /usr/local/eosio/include/eosio/chain/block_timestamp.hpp
+-- Installing: /usr/local/eosio/include/eosio/chain/wasm_interface.hpp
+-- Installing: /usr/local/eosio/include/eosio/chain/incremental_merkle.hpp
+-- Installing: /usr/local/eosio/include/eosio/chain/authority.hpp
+-- Installing: /usr/local/eosio/include/eosio/chain/action.hpp
+-- Installing: /usr/local/eosio/include/eosio/chain/block_state.hpp
+-- Installing: /usr/local/eosio/include/eosio/chain/snapshot.hpp
+-- Installing: /usr/local/eosio/include/eosio/chain/protocol.hpp
+-- Installing: /usr/local/eosio/include/eosio/chain/contract_types.hpp
+-- Installing: /usr/local/eosio/include/eosio/chain/block.hpp
+-- Installing: /usr/local/eosio/include/eosio/chain/resource_limits.hpp
+-- Installing: /usr/local/eosio/include/eosio/chain/block_log.hpp
+-- Installing: /usr/local/eosio/include/eosio/chain/chain_id_type.hpp
+-- Installing: /usr/local/eosio/include/eosio/chain/account_object.hpp
+-- Installing: /usr/local/eosio/include/eosio/chain/reversible_block_object.hpp
+-- Installing: /usr/local/eosio/include/eosio/chain/merkle.hpp
+-- Installing: /usr/local/eosio/include/eosio/chain/genesis_state.hpp
+-- Installing: /usr/local/eosio/include/eosio/chain/transaction_object.hpp
+-- Installing: /usr/local/eosio/include/eosio/chain/asset.hpp
+-- Installing: /usr/local/eosio/include/eosio/chain/chain_config.hpp
+-- Installing: /usr/local/eosio/include/eosio/chain/wast_to_wasm.hpp
+-- Installing: /usr/local/eosio/include/eosio/chain/wasm_interface_private.hpp
+-- Installing: /usr/local/eosio/include/eosio/chain/block_header_state.hpp
+-- Installing: /usr/local/eosio/include/eosio/chain/chain_snapshot.hpp
+-- Installing: /usr/local/eosio/include/eosio/chain/trace.hpp
+-- Installing: /usr/local/eosio/include/eosio/chain/generated_transaction_object.hpp
+-- Installing: /usr/local/eosio/include/eosio/chain/types.hpp
+-- Installing: /usr/local/eosio/include/eosio/chain/parallel_markers.hpp
+-- Installing: /usr/local/eosio/include/eosio/chain/block_header.hpp
+-- Installing: /usr/local/eosio/include/eosio/chain/wasm_eosio_binary_ops.hpp
+-- Installing: /usr/local/eosio/include/eosio/chain/permission_object.hpp
+-- Installing: /usr/local/eosio/include/eosio/chain/transaction_metadata.hpp
+-- Installing: /usr/local/eosio/include/eosio/chain/authority_checker.hpp
+-- Installing: /usr/local/eosio/include/eosio/chain/wasm_eosio_validation.hpp
+-- Installing: /usr/local/eosio/include/eosio/chain/permission_link_object.hpp
+-- Installing: /usr/local/eosio/include/eosio/chain/apply_context.hpp
+-- Installing: /usr/local/eosio/include/eosio/chain/eosio_contract.hpp
+-- Installing: /usr/local/eosio/include/eosio/chain/authorization_manager.hpp
+-- Installing: /usr/local/eosio/include/eosio/chain/global_property_object.hpp
+-- Installing: /usr/local/eosio/include/eosio/chain/producer_schedule.hpp
+-- Installing: /usr/local/eosio/include/eosio/chain/name.hpp
+-- Installing: /usr/local/eosio/include/eosio/chain/wasm_eosio_injection.hpp
+-- Installing: /usr/local/eosio/include/eosio/chain/symbol.hpp
+-- Installing: /usr/local/eosio/include/eosio/chain/transaction.hpp
+-- Installing: /usr/local/eosio/include/eosio/chain/abi_serializer.hpp
+-- Installing: /usr/local/eosio/include/eosio/chain/action_receipt.hpp
+-- Installing: /usr/local/eosio/include/eosio/chain/controller.hpp
+-- Installing: /usr/local/eosio/include/eosio/chain/transaction_context.hpp
+-- Installing: /usr/local/eosio/include/eosio/chain/core_symbol.hpp
+-- Installing: /usr/local/eosio/lib/libeosio_testing.a
+-- Installing: /usr/local/eosio/include/eosio/testing/tester_network.hpp
+-- Installing: /usr/local/eosio/include/eosio/testing/tester.hpp
+-- Installing: /usr/local/eosio/include/eosio/testing/chainbase_fixture.hpp
+-- Up-to-date: /usr/local/eosio/include/eosio/testing
+-- Installing: /usr/local/eosio/lib/libwabt.a
+-- Installing: /usr/local/eosio/bin/nodeos
+-- Installing: /usr/local/eosio/var/log/eosio
+-- Installing: /usr/local/eosio/var/lib/eosio
+-- Installing: /usr/local/eosio/bin/cleos
+-- Installing: /usr/local/eosio/bin/keosd
+-- Installing: /usr/local/eosio/bin/eosio-launcher
+-- Installing: /usr/local/eosio/bin/eosio-blocklog
